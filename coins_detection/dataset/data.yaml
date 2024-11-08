@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['Half Pound', 'One Pound', 'quarter pound']
+
+roboflow:
+  workspace: coins-1kazp
+  project: coins-detection-4jtq3
+  version: 10
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/coins-1kazp/coins-detection-4jtq3/dataset/10

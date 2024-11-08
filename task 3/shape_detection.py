@@ -31,8 +31,7 @@ while True:
     kernel=np.ones((5,5),dtype='uint8')
 
     mask = cv2.dilate(mask,kernel,iterations=5)
-    mask  =cv2.Canny(mask,75,150
-                    )
+    mask  =cv2.Canny(mask,75,150)
     cnts=cv2.findContours(mask,cv2.RETR_TREE,cv2.CHAIN_APPROX_NONE)[-2]
     for cnt in cnts:
         area=cv2.contourArea(cnt)
